@@ -4,48 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script> 
-    
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header class="bg-red-500 flex w-4/5 mx-auto">
-        <div class="logo w-1/4 bg-green-100 ">
-            Ich bin Logo
+<body class="bg-[url('src/images/bg_bggenerator_com1.png')] bg-cover bg-no-repeat text-white">
+    <header class="flex w-4/5 mx-auto mt-5 px-10 py-3 justify-between flex-wrap bg-white bg-opacity-50 rounded-full shadow-lg">
+        <div class="logo min-w-1/5 uppercase text-3xl self-center text-center">
+            <svg width="7rem" height="100%" viewBox="0 0 169 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0148 2.5V40H0V2.5H10.0148Z" fill="#283841"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0222 2.5H36.3037C43.2175 2.5 48.8222 8.09644 48.8222 15C48.8222 21.9036 43.2175 27.5 36.3037 27.5H25.037V40H15.0222V2.5ZM25.037 17.5H36.3037C37.6865 17.5 38.8074 16.3807 38.8074 15C38.8074 13.6193 37.6865 12.5 36.3037 12.5H25.037V17.5Z" fill="#283841"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M86.3778 2.5V21.875C86.3778 26.3623 90.0208 30 94.5148 30C99.0088 30 102.652 26.3623 102.652 21.875V2.5H112.667V21.875C112.667 31.8852 104.54 40 94.5148 40C84.4898 40 76.363 31.8852 76.363 21.875V2.5H86.3778Z" fill="#283841"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M52.5778 20C52.5778 10.335 60.4244 2.5 70.1037 2.5H72.6074V12.5H70.1037C65.9554 12.5 62.5926 15.8579 62.5926 20V21.25C62.5926 31.6053 54.1855 40 43.8148 40H42.563V30H43.8148C48.6545 30 52.5778 26.0825 52.5778 21.25V20Z" fill="#283841"></path>
+                <path d="M169 3.75C169 5.82107 167.319 7.5 165.244 7.5C163.17 7.5 161.489 5.82107 161.489 3.75C161.489 1.67893 163.17 0 165.244 0C167.319 0 169 1.67893 169 3.75Z" fill="#283841"></path>
+                <path d="M123.42 40L128.199 20.0181L131.752 32.0393C133.87 39.2091 144.041 39.2091 146.16 32.0393L149.712 20.0181L154.491 40H164.787L157.273 8.57949C155.486 1.10744 144.941 0.830781 142.763 8.19891L138.956 21.0833L135.148 8.19892C132.971 0.830824 122.425 1.1074 120.638 8.57948L113.124 40H123.42Z" fill="#283841"></path>
+                </svg>
         </div>
-        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-            <ul>
+        <nav class="flex md:w-3/5 sm:w-full">
+            <ul class="flex justify-between w-full items-center flex-wrap text-black">
                 <li><a href="">Start</a></li>
                 <li><a href="">Leistungen</a></li>
                 <li><a href="">Gallery</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="">Kontakt</a></li>
                 <li><a href="">Impressum</a></li>
             </ul>
         </nav>
     </header>
-    <main class="mx-auto w-4/5 bg-green-300">
-        <section>
-            <h2 class="text-3xl font-bold">Lorem ipsum dolor sit amet.</h2>
+    <main class="mx-auto w-4/5 p-10">
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold mb-3">Lorem ipsum dolor sit amet.</h2>
             <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae necessitatibus soluta earum, recusandae velit vero asperiores omnis minima illo sunt placeat id deleniti in vel atque quae! Iste est incidunt dolorem dolor reprehenderit obcaecati amet consequatur laborum aperiam ipsum aliquam, fugiat minus ad cumque provident culpa odit ab error repudiandae expedita corporis vitae nesciunt perferendis. Voluptate architecto blanditiis recusandae neque deserunt similique et aut eaque quas aliquid! Sint repellat quae earum, quis ut illum ratione in deserunt possimus tenetur, dolorem nemo, obcaecati laudantium assumenda! Reiciendis facere architecto aperiam magnam, officiis dolorum a fugit, dolorem debitis voluptas, totam consequuntur porro aliquid?</p>
         </section>
-        <section>
-            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+        <section class="flex flex-wrap mb-5 justify-between gap-5">
+            <img class="sm:border-red min-w-1/5 border-4 border-white border-opacity-50 rounded-xl shadow-lg" src="https://picsum.photos/id/100/200/150">
+            <img class="min-w-2/5 border-4 border-white border-opacity-50 rounded-xl shadow-lg" src="https://picsum.photos/id/120/200/150">
+            <img class="min-w-2/5 border-4 border-white border-opacity-50 rounded-xl shadow-lg" src="https://picsum.photos/id/140/200/150">
+            <img class="min-w-1/5 border-4 border-white border-opacity-50 rounded-xl shadow-lg" src="https://picsum.photos/id/160/200/150">
+        </section>
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold mb-3">Lorem ipsum dolor sit amet consectetur.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, cupiditate. Eum molestias ut repudiandae eaque laudantium? Magni sed pariatur enim, aperiam modi, eum tempora omnis a corporis quas quasi dolores maxime earum numquam! Non fugiat, perferendis quo inventore tempora animi sint quam? Numquam provident cum velit est harum quod at consequatur minus vitae error saepe, iusto delectus possimus ut dolorum tempora eaque incidunt eligendi officia assumenda explicabo rerum non consequuntur blanditiis. Fugit necessitatibus nihil a inventore autem amet provident rem.</p>
         </section>
-        <section>
-            <h2>Lorem ipsum dolor sit.</h2>
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold mb-3">Lorem ipsum dolor sit.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam beatae minus, quisquam suscipit quibusdam deserunt aut iusto accusantium quas, ratione doloremque eligendi error recusandae sed officia? Minus dolorem molestiae vel quaerat obcaecati laborum illo nobis autem consequatur facilis quia consectetur maiores dignissimos, mollitia eum nihil ipsam fuga dolore vero. Dolorum nulla, quos nostrum ratione enim excepturi facilis adipisci quisquam aspernatur ea provident obcaecati reprehenderit, modi iure commodi. Reprehenderit amet reiciendis suscipit minima accusamus quidem dignissimos earum, eos commodi! Iure animi modi nihil eos, iusto sint ipsum ex. Sit nobis suscipit tempore. Voluptatum natus doloribus quam, tempore tenetur reprehenderit delectus placeat cumque officiis modi est consectetur vero quo ipsa asperiores ad sint, obcaecati assumenda sed dolorum, itaque fugiat! Ab, a!</p>
         </section>
-        <section>
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing.</h2>
+        <section class="mb-10">
+            <h2 class="text-3xl font-bold mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo veniam ab tempore ducimus, numquam hic eligendi excepturi animi odit fugit illum consequuntur quaerat necessitatibus, sapiente obcaecati voluptatem esse molestiae atque. Molestiae perferendis, fuga doloribus voluptates tenetur ex suscipit non minima quod aperiam, adipisci vero consequatur excepturi aliquid delectus sint eligendi quos quam maiores, explicabo aut rerum rem porro. Dolorum, nostrum?</p>
         </section>
-        <section>
+        <section class="mb-10">
             <h2>Lorem, ipsum dolor.</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat id porro quisquam, dolor rem neque iure quibusdam sit asperiores esse ab natus doloremque suscipit temporibus beatae consequatur distinctio rerum cumque.</p>
         </section>
     </main>
-    <footer class="mx-auto w-4/5 bg-blue-200">
+    <footer class="mx-auto w-4/5 p-5 text-center">
         <p>Copyright blah blub suelz</p>
     </footer>
 </body>
